@@ -124,6 +124,7 @@
   (is (seq ((v/email :a) {:a "foo@"})))
   (is (seq ((v/email :a) {:a "@bar"})))
   (is (seq ((v/email :a) {:a "foobar"})))
+  (is (seq ((v/email :a) {:a "foo@bar"})))
   (is (empty? ((v/email :a) {:a nil})))
   (is (empty? ((v/email :a) {:a ""})))
   (is (empty? ((v/email :x) m))))
